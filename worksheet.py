@@ -6,18 +6,65 @@ import random
 import pygame
 from pygame_boids import *
 from helper_functions import *
+# GlowScript 2.1 VPython
+import vpython as vp
 
 
-n = 50
-width = 500
-height = 500
-angle = 0
-position = (100, 125)
+# ------ Starting with vpython -----------#
+a = vp.vector(0, 0, 0)
+print(a.z)
+
+b = vp.vector(5, 6, 7)
+c = vp.vector(10, 15, 20)
+print(b, c)
+d = b + c
+print(d)
+e = vp.vector(2, 2, 2)
+f = e * 3.52
+print(f)
+g = e.dot(b)
+print(g)
+
+
+# A = vpython.vector(1, 2, 0)
+# B = vpython.vector(0, 1, 2)
+
+# Aarr = vpython.arrow(pos=vpython.vector(0, 0, 0), axis=A, color=(255, 0, 0))
+# Barr = vpython.arrow(pos=vpython.vector(0, 0, 0), axis=B, color=(0, 255, 0))
+# Barr.pos = Aarr.pos+Aarr.axis
+#
+
+# vec = pygame.math.Vector2
+# help(pygame.math.Vector2)
+
+# help(vp.vector)
+
+# test_flock_offscreen = initialize_boids_off_screen(n, width, height)
+# for b in test_flock_offscreen:
+#     print("")
+#     print(b.position)
+#     b.update_position()
+#     print(b.position)
+
+# print(random.randrange(-1, 12, 11))
+
+# for i in range(10):
+#     flip = random.randint(0, 1)
+#     if flip:
+#         print(1)
+#     else:
+#         print(0)
+
+# n = 50
+# width = 500
+# height = 500
+# angle = 0
+# position = (100, 125)
 # b = Boid(position, angle, width, height)
 
-
-test_boids = initialize_boids(n, angle, width, height)
-testing_game = game_loop(test_boids, width, height)
+#
+# test_boids = initialize_boids(n, angle, width, height)
+# testing_game = game_loop(test_boids, width, height)
 
 
 # height = 30
