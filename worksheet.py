@@ -3,27 +3,153 @@ import time
 import math
 import numpy as np
 import random
+from initializers import *
 import pygame
+from flock import Flock
 from pygame_boids import *
 from helper_functions import *
-# GlowScript 2.1 VPython
-import vpython as vp
+# #import vpython as vp
 
+
+# a = Boid(np.array([3, 4]), 10, 10)
+# b = Boid(np.array([4, 4]), 10, 10)
+# f = [a, b]
+# af = a.find_flockmates(f)
+# print('a', a)
+# print('flockmate', af)
+# print('align_vec', a.calc_align_force(af))
+
+
+# print(a, b)
+
+# a = np.array([5, 5])
+# print(np.linalg.norm(a))
+# print(set_mag(a, 15))
+
+
+# flock = Flock(5, 50, 50)
+# print(flock)
+# for b in flock.boids:
+#     print(b)
+# for i in range(10):
+#     print("")
+#     print('steering forces:', flock.calc_steering_forces())
+#     flock.update_positions()
+#     for b in flock.boids:
+#         print(b)
+
+
+# a = np.array([3, 5])
+# b = a * 3
+# print(type(b))
+
+
+# flock = initialize_random_boids(10, 100, 100)
+# # print(flock)
+#
+# for b in flock:
+#     print('')
+#     print(b)
+#     print(b.find_flockmates(flock))
+
+# b = Boid(np.array([2, 3]), 120, 250, 250)
+# print(b)
+
+#
+# a = np.array([2.0, 4.0])
+# a /= 2
+# print(a)
+
+
+# x = -1
+# y = -2
+# print(math.degrees(math.atan2(x, y)))
+
+
+#
+# a = np.array([20.1, 30.1])
+# print(np.linalg.norm(a))
+# print(a/np.linalg.norm(a))
+#
+# while np.linalg.norm(a) > 10:
+#     a -= (a/np.linalg.norm(a))
+#     print(a)
+#
+# print('done:', a)
+
+
+# a = np.array([5, 10])
+# b = math.atan(a[0]/a[1])
+# print(math.degrees(b))
+
+# print(math.atan(math.pi))
+# print(math.tan(math.pi))
+# help(math.atan2)
+
+# help(pygame.display.set_mode)
+# a = np.array([random.random(), random.random()])
+# print(a)
+# a[0] += 5
+# print(type(a))
+#
+# a[0], a[1] = 5, 9
+# print(a)
+# print(type(a))
+# b = Boid(np.array([50, 60.1]), 90, 500, 500)
+# print(b.position)
+# print(b.points)
+# print("")
+# print(b.x)
+# print(b.y)
+# print(b.velocity)
+# print("")
+# print(type(b.position))
+# print(type(b.velocity))
+#
+# print(b.update_position())
+# print(b.position)
+# print(b.points)
+# print(b.x)
+# print(b.y)
+
+
+# n = 5
+# width = 500
+# height = 500
+# vec = np.array([5, 10])
+# angle = random.random() * 360
+# b = Boid(vec, angle, width, height)
+# print(b.points)s
+
+
+# a = np.array([1, 2])
+# b = [4, 5]
+# print(type(a+b))
+
+
+# flock = initialize_random_boids(n, width, height)
+# print(flock)
+#
+# # print(np.mag(flock[0].velocity))
+# b0 = flock[0]
+#
+# print(np.linalg.norm(b0.velocity))
+# flock = initialize_boids(n, width, height, np.array([5, 5]))
 
 # ------ Starting with vpython -----------#
-a = vp.vector(0, 0, 0)
-print(a.z)
-
-b = vp.vector(5, 6, 7)
-c = vp.vector(10, 15, 20)
-print(b, c)
-d = b + c
-print(d)
-e = vp.vector(2, 2, 2)
-f = e * 3.52
-print(f)
-g = e.dot(b)
-print(g)
+# a = vp.vector(0, 0, 0)
+# print(a.z)
+#
+# b = vp.vector(5, 6, 7)
+# c = vp.vector(10, 15, 20)
+# print(b, c)
+# d = b + c
+# print(d)
+# e = vp.vector(2, 2, 2)
+# f = e * 3.52
+# print(f)
+# g = e.dot(b)
+# print(g)
 
 
 # A = vpython.vector(1, 2, 0)
